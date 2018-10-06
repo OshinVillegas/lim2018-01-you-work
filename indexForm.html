@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+   
+   
+    <title>You Work</title>
+  </head> 
+  <body> 
+      <div id = 'Data'>
+        </div>
+        <button class="btn btn-outline-dark btn-sm" id='admi'>Administrador</button>
+
+     <div id = 'form'class='container-center'>
+            <div class="testbox">
+                    <h1>Registra tu Visita</h1> 
+                    <div>
+                  
+                      <video src=""id='v'></video>
+                      <canvas id='c'><img src="" id='img'></canvas>
+                      <button class="btn btn-success" id='t'>Toma una foto</button>
+                      </div>
+                     
+              <form >
+                    <hr>
+                <hr>
+
+                <div class='text-center'> 
+                 
+                        <div class="form-group">
+                            <input id='nombre'type="nombre" class="form-control"  placeholder="Nombre Completo">
+                            <hr>
+                            <input id='correo'type="email" class="form-control" placeholder="Email@example.com">
+                                  </div>
+                        <div class="form-group">
+                                <label id='visita'for="exampleFormControlSelect1">A quien visitas</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option value="oshinvillegas25@gmail.com">Ale</option>
+                                  <option value="oshinvillegas25@gmail.com">Bea</option>
+                                  <option value="oshinvillegas25@gmail.com">Papu</option>
+                                </select>
+                              </div>
+                </div>
+
+                </form>
+                <button  id='registro' type="button"class="btn btn-primary">Registrarse </button>
+                <div id='divGet'>
+
+                </div>
+               
+
+            </div>
+            </div>
+            
+    <!-- Optional JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAn-Rv36AgkyH8GAFu_IcHUW96eWMY4IG4",
+        authDomain: "youwork-4089f.firebaseapp.com",
+        databaseURL: "https://youwork-4089f.firebaseio.com",
+        projectId: "youwork-4089f",
+        storageBucket: "youwork-4089f.appspot.com",
+        messagingSenderId: "1098758258743"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src='app.js'></script> 
+</body>
+</html>
